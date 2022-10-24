@@ -1,0 +1,130 @@
+:root{
+    /** Primary **/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /** Neutral **/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    text-align: center;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 500;
+}
+.bg__image{
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container{
+    background-color: var(--white);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    max-width: 400px;
+}
+.container h1{
+    color: var(--bright-blue);
+    margin: 10px 0;
+    font-weight: 900;
+}
+h3{
+    color: #000;
+    font-weight: 700;
+}
+.btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-change{
+    background-color: transparent;
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
+.btn-primary{
+    background-color: var(--bright-blue);
+    color: var(--white);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+.btn-primary:hover , .btn-change:hover{
+    opacity: 0.8;
+}
+.btn-secondary:hover{
+    color:var(--bright-blue);
+}
+.container img.hero{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.container .pricing{
+    margin: 30px auto;
+    padding: 10px;
+    background-color:var(--very-pale-blue);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .pricing .price{
+    margin: 0;
+}
+.container .pricing section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .pricing section img{
+    margin-right: 10px;
+}
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Attribution **/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px){
+
+}
